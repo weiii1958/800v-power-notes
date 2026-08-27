@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="zh-Hant" style="background: #0a0e17; color: #e5e7eb; max-width: none !important; width: 100% !important; box-sizing: border-box">
-<head><style>html,body{background:#0a0e17!important;color:#e5e7eb!important;}img{max-width: none;height:auto;}
+<head><style>html,body{width:100%!important;max-width:none!important;font-size:18px!important;}img{width:100%!important;max-width:100%!important;height:auto!important;}main,.container,.theme-pack{width:100%!important;max-width:none!important;}</style><style>html,body{background:#0a0e17!important;color:#e5e7eb!important;}img{max-width: none;height:auto;}
 main,.main-content,.container,.theme-pack,.report,article{max-width:none!important;width:100%!important;}
 img,.img-xl{max-width:100%!important;width:100%!important;height:auto!important;}
 </style>
@@ -2956,36 +2956,36 @@ main,.main-content,.container,.theme-pack,.report,article{max-width:none!importa
 img,.img-xl{max-width:100%!important;width:100%!important;height:auto!important;}
 </style>
 </head>
-<body bgcolor="#0a0e17" style="background: #0a0e17 !important; color: #e5e7eb !important; padding: 12px !important; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans TC',sans-serif; line-height: 1.7; min-height: 100vh; max-width: none !important; width: 100% !important; box-sizing: border-box; margin: 0 !important" text="#e5e7eb">
+<body bgcolor="#0a0e17" style="background: #0a0e17 !important; color: #e5e7eb !important; padding: 12px !important; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans TC',sans-serif; line-height: 1.75 !important; min-height: 100vh; max-width: none !important; width: 100% !important; box-sizing: border-box; margin: 0 !important; font-size: 18px !important" text="#e5e7eb">
 <main class="main-content" style="background: #0a0e17; color: #e5e7eb; padding: 12px 16px 32px !important; max-width: none !important; width: 100% !important; box-sizing: border-box; margin: 0 !important">
 <div class="page-header" style="background: #0a0e17; color: #f3f4f6; margin-bottom: 1.25rem; max-width: none !important; width: 100% !important; box-sizing: border-box">
-<h1 class="page-title" style="color: #f3f4f6 !important; font-size: 1.75rem; font-weight: 700; line-height: 1.35; margin: 0 0 0.75rem">輝達白皮書、跟AI討論後搞懂的一些基本的架構</h1>
+<h1 class="page-title" style="color: #f3f4f6 !important; font-size: 1.85rem !important; font-weight: 700; line-height: 1.35; margin: 0 0 0.75rem">輝達白皮書、跟AI討論後搞懂的一些基本的架構</h1>
 </div>
 <div class="container" style="background: #0a0e17; color: #e5e7eb; max-width: none !important; width: 100% !important; box-sizing: border-box">
 <article class="theme-pack" style="background: #0a0e17; color: #e5e7eb; max-width: none !important; width: 100% !important; box-sizing: border-box">
-<h2 style="color: #f3f4f6 !important; font-size: 1.35rem; margin: 1.75rem 0 0.75rem">整理筆記</h2>
+<h2 style="color: #f3f4f6 !important; font-size: 1.45rem !important; margin: 1.75rem 0 0.75rem">整理筆記</h2>
 <div class="report" style="background: #0a0e17; color: #e5e7eb; max-width: none !important; width: 100% !important; box-sizing: border-box">
-<h3 class="rep-h" style="color: #f3f4f6 !important; font-size: 1.15rem; margin: 1.5rem 0 0.6rem; border-top: 1px solid #374151; padding-top: 0.85rem">為什麼要 800V：功率／電流瓶頸</h3>
-<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0">機櫃瓦數往上衝時，若還用很低的電壓送（尤其到約 54V），電流一定爆（P＝V×I）。粗算同一 100kW：54V ≈ 1,850A；800V ≈ 125A。</p>
-<img alt="為什麼要做 800V：同功率電流對照、連鎖後果、解法" loading="lazy" src="assets/D_NVDA_q_為什麼要800V.webp" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important"/>
-<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 0.92rem">示意／非實拍：左＝同 100kW 的電流差；中＝銅線／電源架佔滿 → 密度上不去；右＝提高配電電壓＋轉換往外搬＝800V 高速公路。</p>
-<h3 class="rep-h" style="color: #f3f4f6 !important; font-size: 1.15rem; margin: 1.5rem 0 0.6rem; border-top: 1px solid #374151; padding-top: 0.85rem">新做法先講一次：A／B／C</h3>
-<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0">解法不是只有一條路。白皮書給<strong style="color: #fff !important">三個落點</strong>（可並存，不是一定要 A→B→C 升級）：功率變大時，<strong style="color: #fff !important">AC→800V 的轉換點往上游搬</strong>。</p>
-<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0"><strong style="color: #fff !important">A 機櫃級</strong>＝運算櫃旁邊一台 Power Rack（近端，數百 kW）<br/>
+<h3 class="rep-h" style="color: #f3f4f6 !important; font-size: 1.25rem !important; margin: 1.5rem 0 0.6rem; border-top: 1px solid #374151; padding-top: 0.85rem">為什麼要 800V：功率／電流瓶頸</h3>
+<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0; font-size: 1.05rem !important">機櫃瓦數往上衝時，若還用很低的電壓送（尤其到約 54V），電流一定爆（P＝V×I）。粗算同一 100kW：54V ≈ 1,850A；800V ≈ 125A。</p>
+<img alt="為什麼要做 800V：同功率電流對照、連鎖後果、解法" src="assets/D_NVDA_q_為什麼要800V.webp" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important; min-height: 180px"/>
+<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 1.05rem !important">示意／非實拍：左＝同 100kW 的電流差；中＝銅線／電源架佔滿 → 密度上不去；右＝提高配電電壓＋轉換往外搬＝800V 高速公路。</p>
+<h3 class="rep-h" style="color: #f3f4f6 !important; font-size: 1.25rem !important; margin: 1.5rem 0 0.6rem; border-top: 1px solid #374151; padding-top: 0.85rem">新做法先講一次：A／B／C</h3>
+<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0; font-size: 1.05rem !important">解法不是只有一條路。白皮書給<strong style="color: #fff !important">三個落點</strong>（可並存，不是一定要 A→B→C 升級）：功率變大時，<strong style="color: #fff !important">AC→800V 的轉換點往上游搬</strong>。</p>
+<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0; font-size: 1.05rem !important"><strong style="color: #fff !important">A 機櫃級</strong>＝運算櫃旁邊一台 Power Rack（近端，數百 kW）<br/>
 <strong style="color: #fff !important">B 叢集級</strong>＝一台 Power Center 餵一整排（MW 級）<br/>
 <strong style="color: #fff !important">C 資料中心級</strong>＝Power Block 中壓直轉，整廳走 800V（更長遠）</p>
-<img alt="從數百 kW 機櫃往 MW／GW 機房的尺度" class="img-xl" loading="lazy" src="assets/D_NVDA_q_kW往MW_尺度示意.svg?v=4" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important"/>
-<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 0.92rem">示意／非實拍：A＝數百 kW（近端）；B＝MW 級叢集；C＝數 MW→往 GW（長遠）。</p>
-<img alt="四種供電架構：現有＋方案 A／B／C" loading="lazy" src="assets/D_NVDA_q_四方案_路徑電壓示意合一.webp?v=2" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important"/>
-<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 0.92rem">示意／非實拍：現有＝無 800V；A／B＝415／480V→800V→約 54V；C＝中壓→800V→約 54V。</p>
-<img alt="A／B／C 誰餵誰與數字速查" class="img-xl" loading="lazy" src="assets/D_NVDA_q_ABC數字速查.svg?v=4" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important"/>
-<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 0.92rem">示意／非實拍：A＝1 對 1；B＝1 對多；C＝1 對整廳。細節後面再拆。</p>
-<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0">地圖先有了。下面先把<strong style="color: #fff !important">現有整條電怎麼走到 GPU</strong>與零件認完，後面再細拆 A／B／C。</p>
-<h3 class="rep-h" style="color: #f3f4f6 !important; font-size: 1.15rem; margin: 1.5rem 0 0.6rem; border-top: 1px solid #374151; padding-top: 0.85rem">發電 → GPU：完整路徑（現有）</h3>
-<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0">多數機房<strong style="color: #fff !important">現在還在用的路</strong>先走一遍（A／B／C 改的是後面幾段）。</p>
-<img alt="從發電到 GPU：路徑與電壓合一" loading="lazy" src="assets/D_NVDA_q_路徑電壓合一.webp" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important"/>
-<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 0.92rem">示意／非實拍：各段常見電壓數量級；各國電網標稱會差一點。</p>
-<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0">1. <strong style="color: #fff !important">發電廠出口</strong> ≈ 10～25 kV<br/>
+<img alt="從數百 kW 機櫃往 MW／GW 機房的尺度" class="img-xl" src="assets/D_NVDA_q_kW往MW_尺度示意.webp" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important; min-height: 180px"/>
+<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 1.05rem !important">示意／非實拍：A＝數百 kW（近端）；B＝MW 級叢集；C＝數 MW→往 GW（長遠）。</p>
+<img alt="四種供電架構：現有＋方案 A／B／C" src="assets/D_NVDA_q_四方案_路徑電壓示意合一.webp?v=2" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important; min-height: 180px"/>
+<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 1.05rem !important">示意／非實拍：現有＝無 800V；A／B＝415／480V→800V→約 54V；C＝中壓→800V→約 54V。</p>
+<img alt="A／B／C 誰餵誰與數字速查" class="img-xl" src="assets/D_NVDA_q_ABC數字速查.webp" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important; min-height: 180px"/>
+<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 1.05rem !important">示意／非實拍：A＝1 對 1；B＝1 對多；C＝1 對整廳。細節後面再拆。</p>
+<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0; font-size: 1.05rem !important">地圖先有了。下面先把<strong style="color: #fff !important">現有整條電怎麼走到 GPU</strong>與零件認完，後面再細拆 A／B／C。</p>
+<h3 class="rep-h" style="color: #f3f4f6 !important; font-size: 1.25rem !important; margin: 1.5rem 0 0.6rem; border-top: 1px solid #374151; padding-top: 0.85rem">發電 → GPU：完整路徑（現有）</h3>
+<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0; font-size: 1.05rem !important">多數機房<strong style="color: #fff !important">現在還在用的路</strong>先走一遍（A／B／C 改的是後面幾段）。</p>
+<img alt="從發電到 GPU：路徑與電壓合一" src="assets/D_NVDA_q_路徑電壓合一.webp" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important; min-height: 180px"/>
+<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 1.05rem !important">示意／非實拍：各段常見電壓數量級；各國電網標稱會差一點。</p>
+<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0; font-size: 1.05rem !important">1. <strong style="color: #fff !important">發電廠出口</strong> ≈ 10～25 kV<br/>
     2. <strong style="color: #fff !important">升壓 → 電塔長途輸電</strong> ≈ 161／345 kV（或更高）← 路上高大鐵塔多半在這<br/>
     3. <strong style="color: #fff !important">變電所</strong>降壓<br/>
     4. <strong style="color: #fff !important">進園區中壓</strong> ≈ 10～35 kV AC（MVS）<br/>
@@ -2993,149 +2993,126 @@ img,.img-xl{max-width:100%!important;width:100%!important;height:auto!important;
     6. <strong style="color: #fff !important">機房母線／RPP</strong> ≈ 仍 400～480 V AC，沿著機櫃列送<br/>
     7. <strong style="color: #fff !important">櫃內 Power Shelf</strong> 才 AC → 約 54 V DC（現有）<br/>
     8. <strong style="color: #fff !important">GPU</strong>：板內再降到更低（幾 V～十幾 V）</p>
-<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0">一句：<strong style="color: #fff !important">電塔＝第 2 段</strong>；<strong style="color: #fff !important">機房故事從第 4 段中壓進園區開始</strong>。下面放大第 4～8 步。</p>
-<h3 class="rep-h" style="color: #f3f4f6 !important; font-size: 1.15rem; margin: 1.5rem 0 0.6rem; border-top: 1px solid #374151; padding-top: 0.85rem">園區後面 → GPU（電氣室／機房／進櫃）</h3>
-<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0">重點：<strong style="color: #fff !important">現有架構裡，交流一路送到運算櫃內，才在櫃裡轉成約 54V 直流</strong>。</p>
-<img alt="現有架構：電氣室到機櫃內走電" loading="lazy" src="assets/D_NVDA_q_現有走電到櫃內.webp?v=2" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important"/>
-<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 0.92rem">示意／非實拍：功能路徑拆解。</p>
-<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0"><strong style="color: #fff !important">電氣室／配電室</strong>：中壓開關（MVS）→ 降壓變壓器 → 低壓配電盤（約 400～480V AC）。<br/>
+<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0; font-size: 1.05rem !important">一句：<strong style="color: #fff !important">電塔＝第 2 段</strong>；<strong style="color: #fff !important">機房故事從第 4 段中壓進園區開始</strong>。下面放大第 4～8 步。</p>
+<h3 class="rep-h" style="color: #f3f4f6 !important; font-size: 1.25rem !important; margin: 1.5rem 0 0.6rem; border-top: 1px solid #374151; padding-top: 0.85rem">園區後面 → GPU（電氣室／機房／進櫃）</h3>
+<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0; font-size: 1.05rem !important">重點：<strong style="color: #fff !important">現有架構裡，交流一路送到運算櫃內，才在櫃裡轉成約 54V 直流</strong>。</p>
+<img alt="現有架構：電氣室到機櫃內走電" src="assets/D_NVDA_q_現有走電到櫃內.webp?v=2" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important; min-height: 180px"/>
+<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 1.05rem !important">示意／非實拍：功能路徑拆解。</p>
+<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0; font-size: 1.05rem !important"><strong style="color: #fff !important">電氣室／配電室</strong>：中壓開關（MVS）→ 降壓變壓器 → 低壓配電盤（約 400～480V AC）。<br/>
 <strong style="color: #fff !important">機房大廳</strong>：母線槽／RPP 把交流沿著列送到各櫃附近；從母線垂下來接到櫃的，常就是 Whip 甩線。<br/>
 <strong style="color: #fff !important">運算機櫃裡面</strong>：Power Shelf 做 AC→約 54V DC，再餵同櫃 GPU。</p>
-<h3 class="rep-h" style="color: #f3f4f6 !important; font-size: 1.15rem; margin: 1.5rem 0 0.6rem; border-top: 1px solid #374151; padding-top: 0.85rem">中壓、MVS</h3>
-<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0"><strong style="color: #fff !important">中壓</strong>＝電塔很高壓與機房 415／480V 低壓之間的檔；進園區常見約 <strong style="color: #fff !important">10～35 kV AC</strong>（Option C 常用標稱也在這檔）。<strong style="color: #fff !important">MVS</strong>＝中壓開關櫃：電氣室裡一人高的金屬櫃，負責這段中壓的接通／切斷／保護，後面才降到約 400～480V。</p>
-<img alt="中壓開關櫃公開實拍" loading="lazy" src="assets/D_NVDA_q_中壓開關櫃_Commons.webp" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important"/>
-<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 0.92rem">公開實拍（Wikimedia Commons）：中壓開關櫃內部。</p>
-<h3 class="rep-h" style="color: #f3f4f6 !important; font-size: 1.15rem; margin: 1.5rem 0 0.6rem; border-top: 1px solid #374151; padding-top: 0.85rem">降壓變壓器</h3>
-<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0"><strong style="color: #fff !important">降壓變壓器</strong>＝把中壓（約 10～35 kV）降到機房能用的<strong style="color: #fff !important">低壓交流</strong>（約 <strong style="color: #fff !important">400～480V AC</strong>）。電氣室裡常見乾式／澆注型金屬櫃體，不是電塔旁邊那種桿上小罐子。後面才進低壓配電盤。</p>
-<img alt="降壓變壓器實景示意" loading="lazy" src="assets/D_NVDA_q_降壓變壓器實景示意.webp" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important"/>
-<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 0.92rem">示意／非實拍：電氣室降壓變壓器長相（非現場照；圖偏散熱片／風扇型）。</p>
-<h3 class="rep-h" style="color: #f3f4f6 !important; font-size: 1.15rem; margin: 1.5rem 0 0.6rem; border-top: 1px solid #374151; padding-top: 0.85rem">低壓配電盤</h3>
-<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0"><strong style="color: #fff !important">低壓配電盤</strong>＝接到變壓器後面、把約 400～480V AC <strong style="color: #fff !important">分路、保護、再送出去</strong>的金屬櫃排（斷路器、母排、計量）。人話：電氣室最後一關，後面才進機房母線／RPP。</p>
-<img alt="低壓配電盤實景示意" loading="lazy" src="assets/D_NVDA_q_低壓配電盤實景示意.webp" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important"/>
-<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 0.92rem">示意／非實拍：低壓開關／配電盤列（非現場照）。</p>
-<h3 class="rep-h" style="color: #f3f4f6 !important; font-size: 1.15rem; margin: 1.5rem 0 0.6rem; border-top: 1px solid #374151; padding-top: 0.85rem">機房母線長怎樣</h3>
-<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0">現在多數資料中心<strong style="color: #fff !important">機櫃列上方走電</strong>，長這樣：頭上掛一條<strong style="color: #fff !important">金屬軌道母線</strong>（Track Busway／母線槽），不是一捆電線。<br/>
+<h3 class="rep-h" style="color: #f3f4f6 !important; font-size: 1.25rem !important; margin: 1.5rem 0 0.6rem; border-top: 1px solid #374151; padding-top: 0.85rem">中壓、MVS</h3>
+<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0; font-size: 1.05rem !important"><strong style="color: #fff !important">中壓</strong>＝電塔很高壓與機房 415／480V 低壓之間的檔；進園區常見約 <strong style="color: #fff !important">10～35 kV AC</strong>（Option C 常用標稱也在這檔）。<strong style="color: #fff !important">MVS</strong>＝中壓開關櫃：電氣室裡一人高的金屬櫃，負責這段中壓的接通／切斷／保護，後面才降到約 400～480V。</p>
+<img alt="中壓開關櫃公開實拍" src="assets/D_NVDA_q_中壓開關櫃_Commons.webp" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important; min-height: 180px"/>
+<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 1.05rem !important">公開實拍（Wikimedia Commons）：中壓開關櫃內部。</p>
+<h3 class="rep-h" style="color: #f3f4f6 !important; font-size: 1.25rem !important; margin: 1.5rem 0 0.6rem; border-top: 1px solid #374151; padding-top: 0.85rem">降壓變壓器</h3>
+<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0; font-size: 1.05rem !important"><strong style="color: #fff !important">降壓變壓器</strong>＝把中壓（約 10～35 kV）降到機房能用的<strong style="color: #fff !important">低壓交流</strong>（約 <strong style="color: #fff !important">400～480V AC</strong>）。電氣室裡常見乾式／澆注型金屬櫃體，不是電塔旁邊那種桿上小罐子。後面才進低壓配電盤。</p>
+<img alt="降壓變壓器實景示意" src="assets/D_NVDA_q_降壓變壓器實景示意.webp" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important; min-height: 180px"/>
+<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 1.05rem !important">示意／非實拍：電氣室降壓變壓器長相（非現場照；圖偏散熱片／風扇型）。</p>
+<h3 class="rep-h" style="color: #f3f4f6 !important; font-size: 1.25rem !important; margin: 1.5rem 0 0.6rem; border-top: 1px solid #374151; padding-top: 0.85rem">低壓配電盤</h3>
+<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0; font-size: 1.05rem !important"><strong style="color: #fff !important">低壓配電盤</strong>＝接到變壓器後面、把約 400～480V AC <strong style="color: #fff !important">分路、保護、再送出去</strong>的金屬櫃排（斷路器、母排、計量）。人話：電氣室最後一關，後面才進機房母線／RPP。</p>
+<img alt="低壓配電盤實景示意" src="assets/D_NVDA_q_低壓配電盤實景示意.webp" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important; min-height: 180px"/>
+<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 1.05rem !important">示意／非實拍：低壓開關／配電盤列（非現場照）。</p>
+<h3 class="rep-h" style="color: #f3f4f6 !important; font-size: 1.25rem !important; margin: 1.5rem 0 0.6rem; border-top: 1px solid #374151; padding-top: 0.85rem">機房母線長怎樣</h3>
+<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0; font-size: 1.05rem !important">現在多數資料中心<strong style="color: #fff !important">機櫃列上方走電</strong>，長這樣：頭上掛一條<strong style="color: #fff !important">金屬軌道母線</strong>（Track Busway／母線槽），不是一捆電線。<br/>
     順序：長軌道 → 插接箱／Tap-off 夾上去 → 垂下的 <strong style="color: #fff !important">Whip</strong> 進櫃。<br/>
     電氣室／大電流幹線有時用封閉式 sandwich 母線（方管貼牆），那是另一段；冷通道上餵機櫃，多半是這種軌道。</p>
-<img alt="廠商產品圖：Track Busway 軌道母線與插接箱" class="img-xl" loading="lazy" src="assets/D_NVDA_q_母線槽_TrackBusway_廠商圖.webp" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important"/>
-<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 0.92rem">廠商產品圖（Starline Track Busway）｜非機房現場照，但零件長相就是現在機櫃列頭頂常見款：銀軌道＝母線槽；灰盒＝插接箱；右邊垂下黑線＋接頭＝Whip。</p>
-<img alt="母線槽剖面銅排" loading="lazy" src="assets/D_NVDA_q_母線槽_剖面銅排.webp" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important"/>
-<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 0.92rem">示意／非實拍：外殼方管，裡面扁銅排。</p>
-<h3 class="rep-h" style="color: #f3f4f6 !important; font-size: 1.15rem; margin: 1.5rem 0 0.6rem; border-top: 1px solid #374151; padding-top: 0.85rem">Power Whip（甩線）</h3>
-<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0"><strong style="color: #fff !important">接到機櫃上的可插拔供電線束</strong>，不是整條母線本體。<br/>
+<img alt="廠商產品圖：Track Busway 軌道母線與插接箱" class="img-xl" src="assets/D_NVDA_q_母線槽_TrackBusway_廠商圖.webp" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important; min-height: 180px"/>
+<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 1.05rem !important">廠商產品圖（Starline Track Busway）｜非機房現場照，但零件長相就是現在機櫃列頭頂常見款：銀軌道＝母線槽；灰盒＝插接箱；右邊垂下黑線＋接頭＝Whip。</p>
+<img alt="母線槽剖面銅排" src="assets/D_NVDA_q_母線槽_剖面銅排.webp" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important; min-height: 180px"/>
+<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 1.05rem !important">示意／非實拍：外殼方管，裡面扁銅排。</p>
+<h3 class="rep-h" style="color: #f3f4f6 !important; font-size: 1.25rem !important; margin: 1.5rem 0 0.6rem; border-top: 1px solid #374151; padding-top: 0.85rem">Power Whip（甩線）</h3>
+<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0; font-size: 1.05rem !important"><strong style="color: #fff !important">接到機櫃上的可插拔供電線束</strong>，不是整條母線本體。<br/>
     • <strong style="color: #fff !important">現有</strong>：AC Whip（415／480V）從母線插接箱垂進運算櫃<br/>
     • <strong style="color: #fff !important">Option A</strong> 另有：Power Rack → 運算櫃的 <strong style="color: #fff !important">800V DC Whip</strong></p>
-<h3 class="rep-h" style="color: #f3f4f6 !important; font-size: 1.15rem; margin: 1.5rem 0 0.6rem; border-top: 1px solid #374151; padding-top: 0.85rem">Power Shelf 與電源模組（怎麼構成）</h3>
-<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0">先搞懂<strong style="color: #fff !important">零件語言</strong>，下面講 Power Rack 才接得上。分兩層：<br/>
+<h3 class="rep-h" style="color: #f3f4f6 !important; font-size: 1.25rem !important; margin: 1.5rem 0 0.6rem; border-top: 1px solid #374151; padding-top: 0.85rem">Power Shelf 與電源模組（怎麼構成）</h3>
+<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0; font-size: 1.05rem !important">先搞懂<strong style="color: #fff !important">零件語言</strong>，下面講 Power Rack 才接得上。分兩層：<br/>
 <strong style="color: #fff !important">Power Shelf（電源架）</strong>＝機櫃裡橫插的<strong style="color: #fff !important">一層架子</strong>（有背板、槽位、匯流）。<br/>
 <strong style="color: #fff !important">模組磚</strong>＝插進 Shelf 的可熱插拔窄長金屬磚；<strong style="color: #fff !important">轉換在 PSU 裡</strong>。這篇主要兩種：<strong style="color: #fff !important">PSU、BBU</strong>。</p>
-<img alt="現有 Power Shelf：長相＋怎麼組" loading="lazy" src="assets/D_NVDA_q_原本PowerShelf.webp" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important"/>
-<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 0.92rem">示意／非實拍：架子＝Shelf；磚＝PSU；AC→約 54V；BBU 少見；無 800V／無隔壁 Power Rack。</p>
-<img alt="廠商產品圖：Power Shelf 與抽出的 PSU" loading="lazy" src="assets/D_NVDA_q_PSU實體_廠商圖.webp" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important"/>
-<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 0.92rem">廠商產品圖（台達）：架子＝Shelf；抽出窄長磚＝PSU。</p>
-<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0"><strong style="color: #fff !important">一層 Power Shelf 怎麼構成？</strong> 櫃內留固定高度（例 1U、7U）→ 金屬架＋<strong style="color: #fff !important">背板（backplane）</strong>匯流 → 前面一排<strong style="color: #fff !important">槽位</strong>插模組磚 → 電從背板進出到櫃內母線。現有運算櫃常疊多層 Shelf，每層多半插滿 PSU（AC→約 54V）。</p>
-<h3 class="rep-h" style="color: #f3f4f6 !important; font-size: 1.15rem; margin: 1.5rem 0 0.6rem; border-top: 1px solid #374151; padding-top: 0.85rem">PSU（Power Supply Unit，電源供應器）</h3>
-<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0">＝從<strong style="color: #fff !important">交流</strong>轉成<strong style="color: #fff !important">直流</strong>的翻譯磚。<strong style="color: #fff !important">現有</strong>運算櫃：AC 進 → <strong style="color: #fff !important">約 54V DC 出</strong>。<strong style="color: #fff !important">新解方</strong> Power Rack 裡的 PSU 則改做 AC → <strong style="color: #fff !important">800V DC</strong>（外形仍像同一種磚；見方案 A）。</p>
-<img alt="PSU 內部功能示意" loading="lazy" src="assets/D_NVDA_q_PSU內部.webp" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important"/>
-<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 0.92rem">示意／非實拍：這張是 <strong style="color: #fff !important">Power Rack 裡</strong>做 AC→800V 的 PSU 流程（不是現有運算櫃 AC→約 54V 那顆）。</p>
-<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0"><strong style="color: #fff !important">圖上各段（中英）</strong>：<strong style="color: #fff !important">AC（交流）</strong> → <strong style="color: #fff !important">EMI filter（電磁干擾濾波）</strong> → <strong style="color: #fff !important">整流 Rectifier ＋ PFC（功率因數修正）</strong> → <strong style="color: #fff !important">隔離轉換 Isolated conversion</strong>（常上 SiC／GaN）→ <strong style="color: #fff !important">800V DC out</strong>。</p>
-<h3 class="rep-h" style="color: #f3f4f6 !important; font-size: 1.15rem; margin: 1.5rem 0 0.6rem; border-top: 1px solid #374151; padding-top: 0.85rem">原本 Compute Rack 怎麼用（拼成整櫃）</h3>
-<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0">認完 PSU，這裡把<strong style="color: #fff !important">傳統運算櫃</strong>拼起來：AC Whip 從母線垂進來 → 櫃頂幾層 Power Shelf（每層插 PSU，AC→約 54V）→ 下面塞 GPU。這張圖<strong style="color: #fff !important">只用得到 PSU</strong>，還用不到 BBU；也沒有隔壁 Power Rack、沒有櫃間 800V。</p>
-<img alt="現有原本 Compute Rack 怎麼用" loading="lazy" src="assets/D_NVDA_q_原本ComputeRack.webp" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important"/>
-<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 0.92rem">示意／非實拍：轉換點在運算櫃裡面；圖上 Power Shelf／PSU 對應上一節。</p>
-<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0">瓦數再往上衝時，櫃內電源架與粗線把空間吃光——這就是開頭那個瓶頸落到「單櫃長相」上的樣子。</p>
-<h3 class="rep-h" style="color: #f3f4f6 !important; font-size: 1.15rem; margin: 1.5rem 0 0.6rem; border-top: 1px solid #374151; padding-top: 0.85rem">BBU（Battery Backup Unit，電池備援單元）</h3>
-<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0">＝插在同一層 Shelf 裡的<strong style="color: #fff !important">電池磚</strong>。平常充電；斷電時短時間放電頂住母線（約 60 秒量級）。<strong style="color: #fff !important">現有</strong>運算櫃空間少、較少配；<strong style="color: #fff !important">新解方</strong>常跟 PSU 一起塞在 Power Rack 的 Shelf 裡（見方案 A）。</p>
-<img alt="OCP ORV3 BBU 模組實拍" loading="lazy" src="assets/D_NVDA_q_BBU_廠商_ORV3_ADI.webp" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important"/>
-<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 0.92rem">公開實拍（ADI OCP ORV3 BBU Reference Design）：電池磚＋背板。ORV3 約 48V／3kW 參考規格；800V／20～25kW 是同概念、更高規格（業界參考約數，非白皮書直接標）。</p>
-<img alt="BBU 單顆模組特寫" loading="lazy" src="assets/D_NVDA_q_BBU_單顆模組_ADI.webp" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important"/>
-<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 0.92rem">同上：單顆特寫。</p>
-<img alt="BBU 內部功能示意" loading="lazy" src="assets/D_NVDA_q_BBU內部.webp" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important"/>
-<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 0.92rem">示意／非實拍：功能拆解。</p>
-<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0"><strong style="color: #fff !important">圖上各段（中英）</strong>：<strong style="color: #fff !important">電池芯／模組 Battery cell／module</strong> → <strong style="color: #fff !important">BMS（Battery Management System，電池管理）</strong> → <strong style="color: #fff !important">充放電 Charge／Discharge</strong>。</p>
-<img alt="PSU 與 BBU 並接在同一條 800V 母線" class="img-xl" loading="lazy" src="assets/D_NVDA_q_PSU與BBU並接.svg?v=2" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important"/>
-<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 0.92rem">示意／非實拍：左平常＝AC→PSU→母線；右斷電＝BBU→母線（不經 PSU）。</p>
-<h3 class="rep-h" style="color: #f3f4f6 !important; font-size: 1.15rem; margin: 1.5rem 0 0.6rem; border-top: 1px solid #374151; padding-top: 0.85rem">細拆：傳統 vs 新，再拆 A／B／C</h3>
-<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0"><strong style="color: #fff !important">路徑對照：</strong>舊做法＝AC 一路進運算櫃才轉約 54V；新做法＝中間插一條 <strong style="color: #fff !important">800V DC 高速公路</strong>，再降到約 54V（或 Kyber 可直降約 12V）。A／B／C 地圖見前面總覽，這裡往下拆。</p>
-<img alt="電壓對齊：傳統路徑 vs 新做法（插入 800V 高速公路）" loading="lazy" src="assets/D_NVDA_q_電壓對齊_傳統vs新.webp" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important"/>
-<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 0.92rem">示意／非實拍：上＝傳統（AC 直進櫃轉 54V）；下＝新做法插入 800V 中段；虛線＝Option C 可從中壓直轉。</p>
-<h3 class="rep-h" style="color: #f3f4f6 !important; font-size: 1.15rem; margin: 1.5rem 0 0.6rem; border-top: 1px solid #374151; padding-top: 0.85rem">方案 A｜功率與層數</h3>
-<img alt="方案 A：660kW 餵向 540kW" class="img-xl" loading="lazy" src="assets/D_NVDA_q_OptionA_功率計算圖.svg?v=11" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important"/>
-<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 0.92rem">示意／非實拍：一個 Shelf → 疊幾層 → 660／540。櫃間 800V 用<strong style="color: #fff !important">多條 125A Whip 並聯</strong>（540kW@800V≈675A），不是一條就夠。</p>
-<img alt="方案 A：Power Rack 與運算櫃" class="img-xl" loading="lazy" src="assets/D_NVDA_q_OptionA內部結構.webp?v=8" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important"/>
-<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 0.92rem">示意／非實拍：左 Power Rack、右運算櫃；中間 800V Whip（單條約 125A，實務多條並聯才餵得滿）。</p>
-<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0"><strong style="color: #fff !important">過渡 vs Kyber：</strong>上面「800→約 54V」是近端／過渡常見畫法。Kyber 原生可在節點用 <strong style="color: #fff !important">64:1 LLC 直降約 12V</strong>，不一定再經 54V 中段。</p>
-<h3 class="rep-h" style="color: #f3f4f6 !important; font-size: 1.15rem; margin: 1.5rem 0 0.6rem; border-top: 1px solid #374151; padding-top: 0.85rem">方案 B｜叢集級 Power Center</h3>
-<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0"><strong style="color: #fff !important">先一句搞懂：</strong>方案 A＝每台運算櫃旁邊一台小電源櫃（1 餵 1）。方案 B＝改成<strong style="color: #fff !important">遠處一台大電源中心</strong>，用頭上 800V 母線一次餵<strong style="color: #fff !important">一整排</strong>運算櫃（1 餵多）。</p>
-<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0"><strong style="color: #fff !important">為什麼要 B？</strong> A 在叢集變大時，旁邊電源櫃太多、Whip 太亂。B 把轉換集中（叢集量級約 <strong style="color: #fff !important">〜2 MW</strong>），佈線較乾淨；但分支故障怎麼切變難（後面接觸器／MCCB／SSCB）。時程約 2027Q3 試點起，偏中長期。</p>
-<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0"><strong style="color: #fff !important">進電幾 V？</strong> 跟 A 同一檔：<strong style="color: #fff !important">415／480V AC</strong> 進 Power Center → 轉 <strong style="color: #fff !important">800V DC</strong> 往外。不是中壓（那是 C）。</p>
-<img alt="方案 B 圖1：Power Center 進出電示意" class="img-xl" loading="lazy" src="assets/D_NVDA_q_OptionB_1_PowerCenter.webp?v=13" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important"/>
-<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 0.92rem">圖1｜示意／非實拍：上頭銀槽＝AC 進；綠扁母線＝800V 往右出算力區；左開櫃＝電源模組排。</p>
-<img alt="方案 B 圖2：800V 母線餵多台運算櫃示意" class="img-xl" loading="lazy" src="assets/D_NVDA_q_OptionB_2_母線餵多櫃.webp?v=6" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important"/>
-<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 0.92rem">圖2｜示意／非實拍：綠扁母線在頭頂 → 插接箱 → 垂進各運算櫃；櫃內分電源層與運算層。</p>
-<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0"><strong style="color: #fff !important">分支故障怎麼切？</strong> B 用一條 800V 母線餵多櫃，某一支短路不能整排一起掛。切斷裝在 <strong style="color: #fff !important">Tap-off Box</strong>（掛在母線上的分接盒）裡。</p>
-<img alt="廠商產品圖：母線上的 Tap-off Box／插接箱" class="img-xl" loading="lazy" src="assets/D_NVDA_q_TapOffBox_廠商圖.webp?v=1" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important"/>
-<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 0.92rem">現實｜廠商產品圖（Starline Track Busway 插接箱／Tap-off）：掛在軌道母線上；可含斷路器、插座或垂線。非現場照；型式示意 Option B 的分接盒角色（電壓／額定依專案）。</p>
-<img alt="方案 B：Tap-off 裝在母線分支上" class="img-xl" loading="lazy" src="assets/D_NVDA_q_B分支保護_位置示意.svg" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important"/>
-<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 0.92rem">示意／非實拍：綠＝800V 母線；Tap-off＝分支盒；裡面裝接觸器／MCCB／SSCB 其中一種。</p>
-<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0"><strong style="color: #fff !important">三種切斷方案：</strong>繼電器／接觸器｜MCCB｜SSCB。差在中間怎麼斷——</p>
-<img alt="三種切斷：接近實物的長相與原理" class="img-xl" loading="lazy" src="assets/D_NVDA_q_三種切斷_原理示意.webp?v=7" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important"/>
-<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 0.92rem">示意／非某廠指定型號：接觸器／MCCB 外型＝公開實拍；SSCB＝結構示意（不虛構產品面板）。半導體開關以 <strong style="color: #fff !important">Si／SiC 為主</strong>（800V 場景 GaN 少見）。</p>
-<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0"><strong style="color: #fff !important">為什麼 DC 特別難切？</strong> AC 有自然過零點較好滅弧；高壓 DC 沒有 → 機械接點更痛，才把規格／SSCB 抬起來。</p>
-<h3 class="rep-h" style="color: #f3f4f6 !important; font-size: 1.15rem; margin: 1.5rem 0 0.6rem; border-top: 1px solid #374151; padding-top: 0.85rem">方案 C｜資料中心級（中壓直轉 800V）</h3>
-<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0"><strong style="color: #fff !important">一句：</strong>B＝先進機房降到 <strong style="color: #fff !important">415／480V</strong> 再轉 800V；C＝中壓（約 <strong style="color: #fff !important">13.8～35 kV</strong>，常寫 34.5／35）進 <strong style="color: #fff !important">Power Block</strong>，一次轉成 800V，<strong style="color: #fff !important">整廳</strong>都走 800V（拿掉中間那層低壓 AC）。</p>
-<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0"><strong style="color: #fff !important">「不做降壓」？半對。</strong>不做的是「先降到 415／480V」那一層；Power Block <strong style="color: #fff !important">裡面仍要把中壓降到 800V</strong>，只是跟隔離／整流／穩壓一次做完。</p>
-<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0"><strong style="color: #fff !important">為什麼要 C？</strong>B 改得少、部署快；機房拉到數百 MW～GW 時，多一層轉換的損耗會放大 → C 路徑更短，偏長遠。</p>
-<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0"><strong style="color: #fff !important">電怎麼走：</strong>中壓 → Power Block（約 <strong style="color: #fff !important">4.8 MW／座</strong>）→ <strong style="color: #fff !important">800V 整廳</strong> → 櫃內仍 800V→約 54V→GPU（跟 A／B 一樣）。跟 B 差在：進電（中壓 vs 415／480V）、設備（Power Block vs Power Center）、覆蓋（整廳 vs 一排）。Power Block 裡近端 <strong style="color: #fff !important">TRU</strong>、長線 <strong style="color: #fff !important">SST</strong>——下面一張圖看完。</p>
-<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0"><strong style="color: #fff !important">TRU、SST 是什麼？</strong> 都是 Power Block 把 <strong style="color: #fff !important">中壓 AC → 800V DC</strong> 的做法，差在「裡面用什麼做那四件事」。</p>
-<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0"><strong style="color: #fff !important">TRU</strong>＝Transformer Rectifier Unit，變壓整流單元。字面就是<strong style="color: #fff !important">變壓器＋整流器綁成一套</strong>。用傳統 50／60Hz 大變壓器把中壓降下來並隔離，再用整流器把交流變成直流。工業界用很久（電解、軌道、礦場的大功率直流電源）。優點：成熟、可靠、好部署 → <strong style="color: #fff !important">近端較可能</strong>做成 Power Block。代價是又大又重。</p>
-<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0"><strong style="color: #fff !important">SST</strong>＝Solid-State Transformer，固態變壓器。「固態」＝用半導體開關，不是那顆大鐵心。用 SiC 功率模組＋高頻小變壓器，用電子方式做降壓、隔離、整流、穩壓。優點：體積小、功率密度高、長期整合強 → <strong style="color: #fff !important">長線較有潛力</strong>。還在量產驗證；台達 SST 量產線約 2027Q1 量級（產業消息，非白皮書），不是近端 Rubin 故事。</p>
-<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0">記一句：同一個職位（中壓直轉 800V），<strong style="color: #fff !important">TRU＝舊配方（大鐵心＋整流）</strong>，<strong style="color: #fff !important">SST＝新配方（一堆高頻功率模組）</strong>。</p>
-<img alt="方案 C：路徑＋Power Block 裡 TRU 與 SST 兩種做法（整合版）" class="img-xl" loading="lazy" src="assets/D_NVDA_q_方案C_TRU與SST示意.webp?v=2" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important"/>
-<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 0.92rem">示意／非實拍（整合版）：上＝中壓→Power Block→整廳 800V→運算櫃；中＝TRU（舊配方）vs SST（新配方）；底＝都做降壓＋隔離＋整流＋穩壓。</p>
-<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0"><strong style="color: #fff !important">Power Block 裡面：</strong>不是超大 PSU、也不是把 Power Rack 放大。一座轉換廠，把<strong style="color: #fff !important">降壓、隔離、整流、穩壓</strong>一次做完；外面一排灰櫃，裡面就是 TRU 或 SST。</p>
-<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0"><strong style="color: #fff !important">不要跟 Power Rack 混：</strong>Power Rack 吃 415／480V、裡是 PSU 磚；Power Block 吃<strong style="color: #fff !important">中壓</strong>，一定有能碰中壓的東西。</p>
-<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0"><strong style="color: #fff !important">近端 TRU（變壓整流單元）——熟、重、好部署：</strong><br/>
+<img alt="現有 Power Shelf：長相＋怎麼組" src="assets/D_NVDA_q_原本PowerShelf.webp" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important; min-height: 180px"/>
+<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 1.05rem !important">示意／非實拍：架子＝Shelf；磚＝PSU；AC→約 54V；BBU 少見；無 800V／無隔壁 Power Rack。</p>
+<img alt="廠商產品圖：Power Shelf 與抽出的 PSU" src="assets/D_NVDA_q_PSU實體_廠商圖.webp" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important; min-height: 180px"/>
+<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 1.05rem !important">廠商產品圖（台達）：架子＝Shelf；抽出窄長磚＝PSU。</p>
+<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0; font-size: 1.05rem !important"><strong style="color: #fff !important">一層 Power Shelf 怎麼構成？</strong> 櫃內留固定高度（例 1U、7U）→ 金屬架＋<strong style="color: #fff !important">背板（backplane）</strong>匯流 → 前面一排<strong style="color: #fff !important">槽位</strong>插模組磚 → 電從背板進出到櫃內母線。現有運算櫃常疊多層 Shelf，每層多半插滿 PSU（AC→約 54V）。</p>
+<h3 class="rep-h" style="color: #f3f4f6 !important; font-size: 1.25rem !important; margin: 1.5rem 0 0.6rem; border-top: 1px solid #374151; padding-top: 0.85rem">PSU（Power Supply Unit，電源供應器）</h3>
+<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0; font-size: 1.05rem !important">＝從<strong style="color: #fff !important">交流</strong>轉成<strong style="color: #fff !important">直流</strong>的翻譯磚。<strong style="color: #fff !important">現有</strong>運算櫃：AC 進 → <strong style="color: #fff !important">約 54V DC 出</strong>。<strong style="color: #fff !important">新解方</strong> Power Rack 裡的 PSU 則改做 AC → <strong style="color: #fff !important">800V DC</strong>（外形仍像同一種磚；見方案 A）。</p>
+<img alt="PSU 內部功能示意" src="assets/D_NVDA_q_PSU內部.webp" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important; min-height: 180px"/>
+<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 1.05rem !important">示意／非實拍：這張是 <strong style="color: #fff !important">Power Rack 裡</strong>做 AC→800V 的 PSU 流程（不是現有運算櫃 AC→約 54V 那顆）。</p>
+<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0; font-size: 1.05rem !important"><strong style="color: #fff !important">圖上各段（中英）</strong>：<strong style="color: #fff !important">AC（交流）</strong> → <strong style="color: #fff !important">EMI filter（電磁干擾濾波）</strong> → <strong style="color: #fff !important">整流 Rectifier ＋ PFC（功率因數修正）</strong> → <strong style="color: #fff !important">隔離轉換 Isolated conversion</strong>（常上 SiC／GaN）→ <strong style="color: #fff !important">800V DC out</strong>。</p>
+<h3 class="rep-h" style="color: #f3f4f6 !important; font-size: 1.25rem !important; margin: 1.5rem 0 0.6rem; border-top: 1px solid #374151; padding-top: 0.85rem">原本 Compute Rack 怎麼用（拼成整櫃）</h3>
+<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0; font-size: 1.05rem !important">認完 PSU，這裡把<strong style="color: #fff !important">傳統運算櫃</strong>拼起來：AC Whip 從母線垂進來 → 櫃頂幾層 Power Shelf（每層插 PSU，AC→約 54V）→ 下面塞 GPU。這張圖<strong style="color: #fff !important">只用得到 PSU</strong>，還用不到 BBU；也沒有隔壁 Power Rack、沒有櫃間 800V。</p>
+<img alt="現有原本 Compute Rack 怎麼用" src="assets/D_NVDA_q_原本ComputeRack.webp" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important; min-height: 180px"/>
+<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 1.05rem !important">示意／非實拍：轉換點在運算櫃裡面；圖上 Power Shelf／PSU 對應上一節。</p>
+<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0; font-size: 1.05rem !important">瓦數再往上衝時，櫃內電源架與粗線把空間吃光——這就是開頭那個瓶頸落到「單櫃長相」上的樣子。</p>
+<h3 class="rep-h" style="color: #f3f4f6 !important; font-size: 1.25rem !important; margin: 1.5rem 0 0.6rem; border-top: 1px solid #374151; padding-top: 0.85rem">BBU（Battery Backup Unit，電池備援單元）</h3>
+<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0; font-size: 1.05rem !important">＝插在同一層 Shelf 裡的<strong style="color: #fff !important">電池磚</strong>。平常充電；斷電時短時間放電頂住母線（約 60 秒量級）。<strong style="color: #fff !important">現有</strong>運算櫃空間少、較少配；<strong style="color: #fff !important">新解方</strong>常跟 PSU 一起塞在 Power Rack 的 Shelf 裡（見方案 A）。</p>
+<img alt="OCP ORV3 BBU 模組實拍" src="assets/D_NVDA_q_BBU_廠商_ORV3_ADI.webp" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important; min-height: 180px"/>
+<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 1.05rem !important">公開實拍（ADI OCP ORV3 BBU Reference Design）：電池磚＋背板。ORV3 約 48V／3kW 參考規格；800V／20～25kW 是同概念、更高規格（業界參考約數，非白皮書直接標）。</p>
+<img alt="BBU 單顆模組特寫" src="assets/D_NVDA_q_BBU_單顆模組_ADI.webp" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important; min-height: 180px"/>
+<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 1.05rem !important">同上：單顆特寫。</p>
+<img alt="BBU 內部功能示意" src="assets/D_NVDA_q_BBU內部.webp" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important; min-height: 180px"/>
+<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 1.05rem !important">示意／非實拍：功能拆解。</p>
+<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0; font-size: 1.05rem !important"><strong style="color: #fff !important">圖上各段（中英）</strong>：<strong style="color: #fff !important">電池芯／模組 Battery cell／module</strong> → <strong style="color: #fff !important">BMS（Battery Management System，電池管理）</strong> → <strong style="color: #fff !important">充放電 Charge／Discharge</strong>。</p>
+<img alt="PSU 與 BBU 並接在同一條 800V 母線" class="img-xl" src="assets/D_NVDA_q_PSU與BBU並接.webp" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important; min-height: 180px"/>
+<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 1.05rem !important">示意／非實拍：左平常＝AC→PSU→母線；右斷電＝BBU→母線（不經 PSU）。</p>
+<h3 class="rep-h" style="color: #f3f4f6 !important; font-size: 1.25rem !important; margin: 1.5rem 0 0.6rem; border-top: 1px solid #374151; padding-top: 0.85rem">細拆：傳統 vs 新，再拆 A／B／C</h3>
+<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0; font-size: 1.05rem !important"><strong style="color: #fff !important">路徑對照：</strong>舊做法＝AC 一路進運算櫃才轉約 54V；新做法＝中間插一條 <strong style="color: #fff !important">800V DC 高速公路</strong>，再降到約 54V（或 Kyber 可直降約 12V）。A／B／C 地圖見前面總覽，這裡往下拆。</p>
+<img alt="電壓對齊：傳統路徑 vs 新做法（插入 800V 高速公路）" src="assets/D_NVDA_q_電壓對齊_傳統vs新.webp" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important; min-height: 180px"/>
+<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 1.05rem !important">示意／非實拍：上＝傳統（AC 直進櫃轉 54V）；下＝新做法插入 800V 中段；虛線＝Option C 可從中壓直轉。</p>
+<h3 class="rep-h" style="color: #f3f4f6 !important; font-size: 1.25rem !important; margin: 1.5rem 0 0.6rem; border-top: 1px solid #374151; padding-top: 0.85rem">方案 A｜功率與層數</h3>
+<img alt="方案 A：660kW 餵向 540kW" class="img-xl" src="assets/D_NVDA_q_OptionA_功率計算圖.webp" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important; min-height: 180px"/>
+<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 1.05rem !important">示意／非實拍：一個 Shelf → 疊幾層 → 660／540。櫃間 800V 用<strong style="color: #fff !important">多條 125A Whip 並聯</strong>（540kW@800V≈675A），不是一條就夠。</p>
+<img alt="方案 A：Power Rack 與運算櫃" class="img-xl" src="assets/D_NVDA_q_OptionA內部結構.webp?v=8" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important; min-height: 180px"/>
+<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 1.05rem !important">示意／非實拍：左 Power Rack、右運算櫃；中間 800V Whip（單條約 125A，實務多條並聯才餵得滿）。</p>
+<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0; font-size: 1.05rem !important"><strong style="color: #fff !important">過渡 vs Kyber：</strong>上面「800→約 54V」是近端／過渡常見畫法。Kyber 原生可在節點用 <strong style="color: #fff !important">64:1 LLC 直降約 12V</strong>，不一定再經 54V 中段。</p>
+<h3 class="rep-h" style="color: #f3f4f6 !important; font-size: 1.25rem !important; margin: 1.5rem 0 0.6rem; border-top: 1px solid #374151; padding-top: 0.85rem">方案 B｜叢集級 Power Center</h3>
+<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0; font-size: 1.05rem !important"><strong style="color: #fff !important">先一句搞懂：</strong>方案 A＝每台運算櫃旁邊一台小電源櫃（1 餵 1）。方案 B＝改成<strong style="color: #fff !important">遠處一台大電源中心</strong>，用頭上 800V 母線一次餵<strong style="color: #fff !important">一整排</strong>運算櫃（1 餵多）。</p>
+<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0; font-size: 1.05rem !important"><strong style="color: #fff !important">為什麼要 B？</strong> A 在叢集變大時，旁邊電源櫃太多、Whip 太亂。B 把轉換集中（叢集量級約 <strong style="color: #fff !important">〜2 MW</strong>），佈線較乾淨；但分支故障怎麼切變難（後面接觸器／MCCB／SSCB）。時程約 2027Q3 試點起，偏中長期。</p>
+<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0; font-size: 1.05rem !important"><strong style="color: #fff !important">進電幾 V？</strong> 跟 A 同一檔：<strong style="color: #fff !important">415／480V AC</strong> 進 Power Center → 轉 <strong style="color: #fff !important">800V DC</strong> 往外。不是中壓（那是 C）。</p>
+<img alt="方案 B 圖1：Power Center 進出電示意" class="img-xl" src="assets/D_NVDA_q_OptionB_1_PowerCenter.webp?v=13" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important; min-height: 180px"/>
+<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 1.05rem !important">圖1｜示意／非實拍：上頭銀槽＝AC 進；綠扁母線＝800V 往右出算力區；左開櫃＝電源模組排。</p>
+<img alt="方案 B 圖2：800V 母線餵多台運算櫃示意" class="img-xl" src="assets/D_NVDA_q_OptionB_2_母線餵多櫃.webp?v=6" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important; min-height: 180px"/>
+<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 1.05rem !important">圖2｜示意／非實拍：綠扁母線在頭頂 → 插接箱 → 垂進各運算櫃；櫃內分電源層與運算層。</p>
+<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0; font-size: 1.05rem !important"><strong style="color: #fff !important">分支故障怎麼切？</strong> B 用一條 800V 母線餵多櫃，某一支短路不能整排一起掛。切斷裝在 <strong style="color: #fff !important">Tap-off Box</strong>（掛在母線上的分接盒）裡。</p>
+<img alt="廠商產品圖：母線上的 Tap-off Box／插接箱" class="img-xl" src="assets/D_NVDA_q_TapOffBox_廠商圖.webp?v=1" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important; min-height: 180px"/>
+<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 1.05rem !important">現實｜廠商產品圖（Starline Track Busway 插接箱／Tap-off）：掛在軌道母線上；可含斷路器、插座或垂線。非現場照；型式示意 Option B 的分接盒角色（電壓／額定依專案）。</p>
+<img alt="方案 B：Tap-off 裝在母線分支上" class="img-xl" src="assets/D_NVDA_q_B分支保護_位置示意.webp" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important; min-height: 180px"/>
+<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 1.05rem !important">示意／非實拍：綠＝800V 母線；Tap-off＝分支盒；裡面裝接觸器／MCCB／SSCB 其中一種。</p>
+<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0; font-size: 1.05rem !important"><strong style="color: #fff !important">三種切斷方案：</strong>繼電器／接觸器｜MCCB｜SSCB。差在中間怎麼斷——</p>
+<img alt="三種切斷：接近實物的長相與原理" class="img-xl" src="assets/D_NVDA_q_三種切斷_原理示意.webp?v=7" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important; min-height: 180px"/>
+<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 1.05rem !important">示意／非某廠指定型號：接觸器／MCCB 外型＝公開實拍；SSCB＝結構示意（不虛構產品面板）。半導體開關以 <strong style="color: #fff !important">Si／SiC 為主</strong>（800V 場景 GaN 少見）。</p>
+<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0; font-size: 1.05rem !important"><strong style="color: #fff !important">為什麼 DC 特別難切？</strong> AC 有自然過零點較好滅弧；高壓 DC 沒有 → 機械接點更痛，才把規格／SSCB 抬起來。</p>
+<h3 class="rep-h" style="color: #f3f4f6 !important; font-size: 1.25rem !important; margin: 1.5rem 0 0.6rem; border-top: 1px solid #374151; padding-top: 0.85rem">方案 C｜資料中心級（中壓直轉 800V）</h3>
+<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0; font-size: 1.05rem !important"><strong style="color: #fff !important">一句：</strong>B＝先進機房降到 <strong style="color: #fff !important">415／480V</strong> 再轉 800V；C＝中壓（約 <strong style="color: #fff !important">13.8～35 kV</strong>，常寫 34.5／35）進 <strong style="color: #fff !important">Power Block</strong>，一次轉成 800V，<strong style="color: #fff !important">整廳</strong>都走 800V（拿掉中間那層低壓 AC）。</p>
+<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0; font-size: 1.05rem !important"><strong style="color: #fff !important">「不做降壓」？半對。</strong>不做的是「先降到 415／480V」那一層；Power Block <strong style="color: #fff !important">裡面仍要把中壓降到 800V</strong>，只是跟隔離／整流／穩壓一次做完。</p>
+<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0; font-size: 1.05rem !important"><strong style="color: #fff !important">為什麼要 C？</strong>B 改得少、部署快；機房拉到數百 MW～GW 時，多一層轉換的損耗會放大 → C 路徑更短，偏長遠。</p>
+<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0; font-size: 1.05rem !important"><strong style="color: #fff !important">電怎麼走：</strong>中壓 → Power Block（約 <strong style="color: #fff !important">4.8 MW／座</strong>）→ <strong style="color: #fff !important">800V 整廳</strong> → 櫃內仍 800V→約 54V→GPU（跟 A／B 一樣）。跟 B 差在：進電（中壓 vs 415／480V）、設備（Power Block vs Power Center）、覆蓋（整廳 vs 一排）。Power Block 裡近端 <strong style="color: #fff !important">TRU</strong>、長線 <strong style="color: #fff !important">SST</strong>——下面一張圖看完。</p>
+<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0; font-size: 1.05rem !important"><strong style="color: #fff !important">TRU、SST 是什麼？</strong> 都是 Power Block 把 <strong style="color: #fff !important">中壓 AC → 800V DC</strong> 的做法，差在「裡面用什麼做那四件事」。</p>
+<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0; font-size: 1.05rem !important"><strong style="color: #fff !important">TRU</strong>＝Transformer Rectifier Unit，變壓整流單元。字面就是<strong style="color: #fff !important">變壓器＋整流器綁成一套</strong>。用傳統 50／60Hz 大變壓器把中壓降下來並隔離，再用整流器把交流變成直流。工業界用很久（電解、軌道、礦場的大功率直流電源）。優點：成熟、可靠、好部署 → <strong style="color: #fff !important">近端較可能</strong>做成 Power Block。代價是又大又重。</p>
+<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0; font-size: 1.05rem !important"><strong style="color: #fff !important">SST</strong>＝Solid-State Transformer，固態變壓器。「固態」＝用半導體開關，不是那顆大鐵心。用 SiC 功率模組＋高頻小變壓器，用電子方式做降壓、隔離、整流、穩壓。優點：體積小、功率密度高、長期整合強 → <strong style="color: #fff !important">長線較有潛力</strong>。還在量產驗證；台達 SST 量產線約 2027Q1 量級（產業消息，非白皮書），不是近端 Rubin 故事。</p>
+<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0; font-size: 1.05rem !important">記一句：同一個職位（中壓直轉 800V），<strong style="color: #fff !important">TRU＝舊配方（大鐵心＋整流）</strong>，<strong style="color: #fff !important">SST＝新配方（一堆高頻功率模組）</strong>。</p>
+<img alt="方案 C：路徑＋Power Block 裡 TRU 與 SST 兩種做法（整合版）" class="img-xl" src="assets/D_NVDA_q_方案C_TRU與SST示意.webp?v=2" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important; min-height: 180px"/>
+<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 1.05rem !important">示意／非實拍（整合版）：上＝中壓→Power Block→整廳 800V→運算櫃；中＝TRU（舊配方）vs SST（新配方）；底＝都做降壓＋隔離＋整流＋穩壓。</p>
+<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0; font-size: 1.05rem !important"><strong style="color: #fff !important">Power Block 裡面：</strong>不是超大 PSU、也不是把 Power Rack 放大。一座轉換廠，把<strong style="color: #fff !important">降壓、隔離、整流、穩壓</strong>一次做完；外面一排灰櫃，裡面就是 TRU 或 SST。</p>
+<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0; font-size: 1.05rem !important"><strong style="color: #fff !important">不要跟 Power Rack 混：</strong>Power Rack 吃 415／480V、裡是 PSU 磚；Power Block 吃<strong style="color: #fff !important">中壓</strong>，一定有能碰中壓的東西。</p>
+<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0; font-size: 1.05rem !important"><strong style="color: #fff !important">近端 TRU（變壓整流單元）——熟、重、好部署：</strong><br/>
     • 中壓開關／保護（先進來要能切斷）<br/>
     • <strong style="color: #fff !important">工頻大變壓器</strong>（50／60Hz）＝降壓＋隔離。長相就是前面降壓變壓器那種三柱澆注線圈，只是 MW 級、更大<br/>
     • <strong style="color: #fff !important">整流模組</strong>（二極體／閘流體）＝交流變直流<br/>
     • 濾波電容／電感＋穩壓控制＝把 800V 撫平、釘住</p>
-<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0"><strong style="color: #fff !important">長線 SST：</strong>同一四件事，改很多層 <strong style="color: #fff !important">SiC 功率模組</strong>串起來扛中壓；每層＝SiC 開關＋高頻小變壓器＋整流，輸出並聯成 800V。體積小、密度高。</p>
-<img alt="公開實拍：工頻澆注變壓器三柱線圈" loading="lazy" src="assets/D_NVDA_q_TRU變壓器_Commons.webp" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important"/>
-<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 0.92rem">公開實拍（Wikimedia Commons）：工頻澆注變壓器。TRU 裡「降壓＋隔離」就是這種三柱線圈；Power Block 用的是 MW 級、更大。不是 800V 的 PSU 磚。</p>
-<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0">收束只記一句：舊機房 AC 進櫃才轉約 54V；新做法提早轉 800V 再降到約 54V。B 會卡在 DC 切斷／滅弧（MCCB／SSCB）。</p>
-<h3 class="rep-h" style="color: #f3f4f6 !important; font-size: 1.15rem; margin: 1.5rem 0 0.6rem; border-top: 1px solid #374151; padding-top: 0.85rem">哪些公司有機會（近→遠）</h3>
-<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0">分檔＝跟本篇機制多貼（不是報酬）。只列原文有掛、關聯夠硬的；不夠純的不硬塞。</p>
-<img alt="800V 供電相關公司：近到遠關聯示意" class="img-xl" loading="lazy" src="assets/D_NVDA_q_公司關聯近到遠.svg?v=5" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important"/>
-<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 0.92rem">示意／非投資建議。</p>
+<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0; font-size: 1.05rem !important"><strong style="color: #fff !important">長線 SST：</strong>同一四件事，改很多層 <strong style="color: #fff !important">SiC 功率模組</strong>串起來扛中壓；每層＝SiC 開關＋高頻小變壓器＋整流，輸出並聯成 800V。體積小、密度高。</p>
+<img alt="公開實拍：工頻澆注變壓器三柱線圈" src="assets/D_NVDA_q_TRU變壓器_Commons.webp" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important; min-height: 180px"/>
+<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 1.05rem !important">公開實拍（Wikimedia Commons）：工頻澆注變壓器。TRU 裡「降壓＋隔離」就是這種三柱線圈；Power Block 用的是 MW 級、更大。不是 800V 的 PSU 磚。</p>
+<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0; font-size: 1.05rem !important">收束只記一句：舊機房 AC 進櫃才轉約 54V；新做法提早轉 800V 再降到約 54V。B 會卡在 DC 切斷／滅弧（MCCB／SSCB）。</p>
+<h3 class="rep-h" style="color: #f3f4f6 !important; font-size: 1.25rem !important; margin: 1.5rem 0 0.6rem; border-top: 1px solid #374151; padding-top: 0.85rem">哪些公司有機會（近→遠）</h3>
+<p class="narr" style="color: #e5e7eb !important; background: transparent; margin: 0.55rem 0; font-size: 1.05rem !important">分檔＝跟本篇機制多貼（不是報酬）。只列原文有掛、關聯夠硬的；不夠純的不硬塞。</p>
+<img alt="800V 供電相關公司：近到遠關聯示意" class="img-xl" src="assets/D_NVDA_q_公司關聯近到遠.webp" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important; min-height: 180px"/>
+<p class="caption" style="color: #9ca3af !important; background: transparent; margin: 0.35rem 0 1rem; font-size: 1.05rem !important">示意／非投資建議。</p>
 </div>
 </article>
 </div>
 </main>
-<div class="img-lightbox" id="imgLightbox" title="點空白處關閉"><img alt="放大預覽" style="max-width: 100% !important; height: auto !important; display: block; margin: 0.75rem 0; border-radius: 6px; width: 100% !important"/></div>
-<script>
-(function () {
-  var box = document.getElementById("imgLightbox");
-  if (!box) return;
-  var big = box.querySelector("img");
-  function open(src, alt) {
-    big.src = src; big.alt = alt || ""; box.classList.add("is-open");
-  }
-  function close() {
-    box.classList.remove("is-open"); big.removeAttribute("src");
-  }
-  document.querySelectorAll(".theme-pack img").forEach(function (img) {
-    if (img.closest(".img-lightbox")) return;
-    img.addEventListener("click", function (e) {
-      e.preventDefault();
-      open(img.currentSrc || img.src, img.alt);
-    });
-  });
-  box.addEventListener("click", close);
-  document.addEventListener("keydown", function (e) {
-    if (e.key === "Escape") close();
-  });
-})();
-</script>
+
+
 </body>
 </html>
