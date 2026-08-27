@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" font-family="system-ui,sans-serif">
+  <rect width="1000" height="520" fill="#0f172a"/>
+  <text x="500" y="36" text-anchor="middle" fill="#e2e8f0" font-size="22" font-weight="700">A／B／C：誰餵誰＋記住哪些數字</text>
+
+  <!-- A -->
+  <rect x="24" y="60" width="300" height="400" rx="12" fill="#1e293b" stroke="#38bdf8"/>
+  <text x="174" y="95" text-anchor="middle" fill="#7dd3fc" font-size="18" font-weight="700">A｜機櫃級</text>
+  <text x="174" y="130" text-anchor="middle" fill="#f8fafc" font-size="15">1 電源櫃 ≈ 餵 1 運算櫃</text>
+  <text x="174" y="155" text-anchor="middle" fill="#94a3b8" font-size="13">（無 BBU 菜單可 1 餵 2）</text>
+  <text x="40" y="200" fill="#cbd5e1" font-size="13">進電：415／480V AC</text>
+  <text x="40" y="225" fill="#cbd5e1" font-size="13">中段：800V 多條 Whip（每條≈125A）</text>
+  <text x="40" y="250" fill="#cbd5e1" font-size="13">電源櫃量級：≈660kW</text>
+  <text x="40" y="290" fill="#e2e8f0" font-size="13" font-weight="700">電源櫃內（有 BBU）：</text>
+  <text x="40" y="315" fill="#94a3b8" font-size="12">6 層 7U Shelf</text>
+  <text x="40" y="335" fill="#94a3b8" font-size="12">每層 6×18.3kW PSU＋4×20kW BBU</text>
+  <text x="40" y="355" fill="#94a3b8" font-size="12">→ 約 36 顆 PSU＋24 顆 BBU</text>
+  <text x="40" y="390" fill="#e2e8f0" font-size="13" font-weight="700">運算櫃內：</text>
+  <text x="40" y="415" fill="#94a3b8" font-size="12">6 層 1U Shelf × 6×15kW PSU</text>
+  <text x="40" y="435" fill="#94a3b8" font-size="12">每層約 90kW（800→54V）</text>
+
+  <!-- B -->
+  <rect x="350" y="60" width="300" height="400" rx="12" fill="#1e293b" stroke="#a78bfa"/>
+  <text x="500" y="95" text-anchor="middle" fill="#c4b5fd" font-size="18" font-weight="700">B｜叢集級</text>
+  <text x="500" y="130" text-anchor="middle" fill="#f8fafc" font-size="15">1 電源中心 → 餵多櫃</text>
+  <text x="500" y="155" text-anchor="middle" fill="#94a3b8" font-size="13">（整排／一叢集，不是 1:1）</text>
+  <text x="370" y="200" fill="#cbd5e1" font-size="13">進電：仍 415／480V AC</text>
+  <text x="370" y="225" fill="#cbd5e1" font-size="13">中段：800V 母線＋分支</text>
+  <text x="370" y="250" fill="#cbd5e1" font-size="13">每分支 ≈125A Tap-off</text>
+  <text x="370" y="290" fill="#e2e8f0" font-size="13" font-weight="700">跟 A 的數字差在哪：</text>
+  <text x="370" y="315" fill="#94a3b8" font-size="12">轉換點從「旁邊一台」</text>
+  <text x="370" y="335" fill="#94a3b8" font-size="12">變成「遠處一台大的」</text>
+  <text x="370" y="355" fill="#94a3b8" font-size="12">運算櫃內仍要 800→54V</text>
+  <text x="370" y="400" fill="#e2e8f0" font-size="13" font-weight="700">時程印象：</text>
+  <text x="370" y="425" fill="#94a3b8" font-size="12">最快約 2027Q3 試點</text>
+  <text x="370" y="445" fill="#94a3b8" font-size="12">白皮書未鎖死「餵幾櫃」</text>
+
+  <!-- C -->
+  <rect x="676" y="60" width="300" height="400" rx="12" fill="#1e293b" stroke="#34d399"/>
+  <text x="826" y="95" text-anchor="middle" fill="#6ee7b7" font-size="18" font-weight="700">C｜資料中心級</text>
+  <text x="826" y="130" text-anchor="middle" fill="#f8fafc" font-size="15">1 Power Block → 餵整廳</text>
+  <text x="826" y="155" text-anchor="middle" fill="#94a3b8" font-size="13">（尺度比 B 再大一檔）</text>
+  <text x="696" y="200" fill="#cbd5e1" font-size="13">進電：≈13.8～35 kV</text>
+  <text x="696" y="225" fill="#cbd5e1" font-size="13">中段：800V 覆蓋整廳</text>
+  <text x="696" y="250" fill="#cbd5e1" font-size="13">每座 Block ≈4.8 MW</text>
+  <text x="696" y="290" fill="#e2e8f0" font-size="13" font-weight="700">粗算聯想（約數）：</text>
+  <text x="696" y="315" fill="#94a3b8" font-size="12">5×3.5MW 整流（5-to-4）</text>
+  <text x="696" y="335" fill="#94a3b8" font-size="12">≈ 可餵數十～百櫃量級</text>
+  <text x="696" y="355" fill="#64748b" font-size="11">（實際看冗餘／稼動，勿當精確）</text>
+  <text x="696" y="400" fill="#e2e8f0" font-size="13" font-weight="700">裡面配方：</text>
+  <text x="696" y="425" fill="#94a3b8" font-size="12">近端 TRU｜長線 SST</text>
+  <text x="696" y="445" fill="#94a3b8" font-size="12">不是把 Power Rack 放大</text>
+
+  <text x="500" y="500" text-anchor="middle" fill="#475569" font-size="12">示意／非實拍 · 數字依 NVIDIA 800V 白皮書參考量級；部署會變</text>
+</svg>

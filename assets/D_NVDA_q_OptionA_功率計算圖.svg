@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 760" font-family="system-ui,-apple-system,'PingFang TC',sans-serif">
+  <rect width="1120" height="760" fill="#0a0e17"/>
+
+  <text x="560" y="36" text-anchor="middle" fill="#e5e7eb" font-size="24" font-weight="700">方案 A｜功率怎麼對上</text>
+  <text x="560" y="60" text-anchor="middle" fill="#94a3b8" font-size="13">先看「一個 Shelf 是什麼」→ 再疊幾層 → 最後幾餵幾</text>
+
+  <!-- ========== LEFT: Power ========== -->
+  <rect x="28" y="80" width="460" height="560" rx="16" fill="#111827" stroke="#38bdf8" stroke-width="2"/>
+  <text x="258" y="112" text-anchor="middle" fill="#7dd3fc" font-size="20" font-weight="700">Power Rack（電源櫃）</text>
+  <text x="258" y="136" text-anchor="middle" fill="#94a3b8" font-size="12">415／480V AC 進（12×100A Whip）→ 轉成 800V DC</text>
+
+  <!-- one shelf definition -->
+  <rect x="48" y="152" width="420" height="100" rx="10" fill="#0c4a6e" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="258" y="178" text-anchor="middle" fill="#e0f2fe" font-size="15" font-weight="700">一個 Shelf 長這樣</text>
+  <text x="258" y="202" text-anchor="middle" fill="#7dd3fc" font-size="14">高度＝7U　｜　裡面＝6 PSU ＋ 4 BBU</text>
+  <text x="258" y="224" text-anchor="middle" fill="#cbd5e1" font-size="12">PSU：6×18.3kW（AC→800V）　BBU：4×20kW（備援≈60秒）</text>
+  <text x="258" y="244" text-anchor="middle" fill="#e0f2fe" font-size="13" font-weight="600">這一層合計 ≈ 110kW</text>
+
+  <!-- stack -->
+  <text x="258" y="278" text-anchor="middle" fill="#94a3b8" font-size="13">這種 7U Shelf 疊 6 層</text>
+  <g>
+    <rect x="78" y="290" width="360" height="22" rx="3" fill="#0ea5e9" opacity="0.28" stroke="#38bdf8"/>
+    <rect x="78" y="316" width="360" height="22" rx="3" fill="#0ea5e9" opacity="0.28" stroke="#38bdf8"/>
+    <rect x="78" y="342" width="360" height="22" rx="3" fill="#0ea5e9" opacity="0.28" stroke="#38bdf8"/>
+    <rect x="78" y="368" width="360" height="22" rx="3" fill="#0ea5e9" opacity="0.28" stroke="#38bdf8"/>
+    <rect x="78" y="394" width="360" height="22" rx="3" fill="#0ea5e9" opacity="0.28" stroke="#38bdf8"/>
+    <rect x="78" y="420" width="360" height="22" rx="3" fill="#0ea5e9" opacity="0.28" stroke="#38bdf8"/>
+    <text x="258" y="306" text-anchor="middle" fill="#e0f2fe" font-size="11">7U · 6PSU＋4BBU · ≈110kW</text>
+    <text x="258" y="332" text-anchor="middle" fill="#94a3b8" font-size="11">同上</text>
+    <text x="258" y="358" text-anchor="middle" fill="#94a3b8" font-size="11">同上</text>
+    <text x="258" y="384" text-anchor="middle" fill="#94a3b8" font-size="11">同上</text>
+    <text x="258" y="410" text-anchor="middle" fill="#94a3b8" font-size="11">同上</text>
+    <text x="258" y="436" text-anchor="middle" fill="#94a3b8" font-size="11">同上</text>
+  </g>
+
+  <text x="258" y="478" text-anchor="middle" fill="#38bdf8" font-size="42" font-weight="800">660</text>
+  <text x="258" y="508" text-anchor="middle" fill="#7dd3fc" font-size="16" font-weight="700">kW＝6 × 110</text>
+  <text x="258" y="536" text-anchor="middle" fill="#cbd5e1" font-size="13">整櫃顆數：36 PSU ＋ 24 BBU</text>
+  <text x="258" y="562" text-anchor="middle" fill="#64748b" font-size="12">（6層×每層6PSU；6層×每層4BBU）</text>
+  <text x="258" y="590" text-anchor="middle" fill="#fbbf24" font-size="12">為什麼要 7U？要做 AC→800V，還要塞 4 顆電池</text>
+  <text x="258" y="612" text-anchor="middle" fill="#64748b" font-size="11">無 BBU 可改「一個 Shelf＝3U、只配 6 PSU」仍≈110kW</text>
+
+  <!-- CENTER -->
+  <path d="M500 360 H560" stroke="#22d3ee" stroke-width="6" stroke-linecap="round"/>
+  <polygon points="560,348 590,360 560,372" fill="#22d3ee"/>
+  <text x="545" y="320" text-anchor="middle" fill="#67e8f9" font-size="14" font-weight="700">800V DC</text>
+  <text x="545" y="340" text-anchor="middle" fill="#67e8f9" font-size="12">多條 Whip 並聯</text>
+  <text x="545" y="358" text-anchor="middle" fill="#94a3b8" font-size="11">每條 ≈125A</text>
+  <text x="545" y="400" text-anchor="middle" fill="#94a3b8" font-size="12">1 餵 1</text>
+
+  <!-- ========== RIGHT: Compute ========== -->
+  <rect x="612" y="80" width="480" height="560" rx="16" fill="#111827" stroke="#34d399" stroke-width="2"/>
+  <text x="852" y="112" text-anchor="middle" fill="#6ee7b7" font-size="20" font-weight="700">Compute Rack（運算櫃）</text>
+  <text x="852" y="136" text-anchor="middle" fill="#94a3b8" font-size="12">800V DC 進 → 再降成約 54V DC → 餵 GPU</text>
+
+  <rect x="632" y="152" width="440" height="100" rx="10" fill="#064e3b" stroke="#34d399" stroke-width="1.5"/>
+  <text x="852" y="178" text-anchor="middle" fill="#d1fae5" font-size="15" font-weight="700">一個 Shelf 長這樣</text>
+  <text x="852" y="202" text-anchor="middle" fill="#6ee7b7" font-size="14">高度＝1U　｜　裡面＝6 PSU（沒有 BBU）</text>
+  <text x="852" y="224" text-anchor="middle" fill="#cbd5e1" font-size="12">PSU：6×15kW（只做 800V→約 54V）</text>
+  <text x="852" y="244" text-anchor="middle" fill="#d1fae5" font-size="13" font-weight="600">這一層合計 ≈ 90kW</text>
+
+  <text x="852" y="278" text-anchor="middle" fill="#94a3b8" font-size="13">這種 1U Shelf 疊 6 層</text>
+  <g>
+    <rect x="672" y="290" width="360" height="18" rx="3" fill="#34d399" opacity="0.28" stroke="#34d399"/>
+    <rect x="672" y="312" width="360" height="18" rx="3" fill="#34d399" opacity="0.28" stroke="#34d399"/>
+    <rect x="672" y="334" width="360" height="18" rx="3" fill="#34d399" opacity="0.28" stroke="#34d399"/>
+    <rect x="672" y="356" width="360" height="18" rx="3" fill="#34d399" opacity="0.28" stroke="#34d399"/>
+    <rect x="672" y="378" width="360" height="18" rx="3" fill="#34d399" opacity="0.28" stroke="#34d399"/>
+    <rect x="672" y="400" width="360" height="18" rx="3" fill="#34d399" opacity="0.28" stroke="#34d399"/>
+    <text x="852" y="303" text-anchor="middle" fill="#d1fae5" font-size="10">1U · 6PSU · ≈90kW</text>
+    <text x="852" y="325" text-anchor="middle" fill="#94a3b8" font-size="10">同上</text>
+    <text x="852" y="347" text-anchor="middle" fill="#94a3b8" font-size="10">同上</text>
+    <text x="852" y="369" text-anchor="middle" fill="#94a3b8" font-size="10">同上</text>
+    <text x="852" y="391" text-anchor="middle" fill="#94a3b8" font-size="10">同上</text>
+    <text x="852" y="413" text-anchor="middle" fill="#94a3b8" font-size="10">同上</text>
+  </g>
+
+  <rect x="672" y="430" width="360" height="36" rx="6" fill="#1f2937" stroke="#4b5563"/>
+  <text x="852" y="453" text-anchor="middle" fill="#fbbf24" font-size="15" font-weight="700">下面＝GPU</text>
+
+  <text x="852" y="500" text-anchor="middle" fill="#34d399" font-size="42" font-weight="800">540</text>
+  <text x="852" y="530" text-anchor="middle" fill="#6ee7b7" font-size="16" font-weight="700">kW＝6 × 90</text>
+  <text x="852" y="558" text-anchor="middle" fill="#cbd5e1" font-size="13">整櫃顆數：36 PSU</text>
+  <text x="852" y="582" text-anchor="middle" fill="#64748b" font-size="12">（6層×每層6PSU）</text>
+  <text x="852" y="610" text-anchor="middle" fill="#fbbf24" font-size="12">為什麼 1U 就夠？只做直流降壓，又沒電池</text>
+
+  <!-- footer compare -->
+  <rect x="28" y="660" width="1064" height="72" rx="10" fill="#1f2937" stroke="#475569"/>
+  <text x="560" y="688" text-anchor="middle" fill="#e5e7eb" font-size="14" font-weight="700">兩邊不要用「每 U 多少 kW」互比</text>
+  <text x="560" y="712" text-anchor="middle" fill="#94a3b8" font-size="13">Power：AC→800V ＋ 電池＝架子高　｜　Compute：800→54V、無電池＝架子薄　｜　有 BBU 時 1 台 Power ≈ 餵 1 台 Compute</text>
+</svg>
