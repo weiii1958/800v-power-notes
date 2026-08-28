@@ -1,3 +1,7 @@
-# discontinued
+# 800V 供電｜學習筆記（分享版）
 
-This share site is retired. Use the local PDF instead.
+靜態 HTML，無站台導覽。
+
+**線上看：** https://weiii1958.github.io/800v-power-notes/
+
+本機來源：`產業學習/半導體站/800V供電/800V供電.html`（主檔不動；此資料夾只給分享用）
