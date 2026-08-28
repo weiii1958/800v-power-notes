@@ -8,9 +8,58 @@
   <meta name="description" content="輝達白皮書、跟AI討論後搞懂的一些基本的架構" />
   <link rel="stylesheet" href="styles.css" />
 
-<meta name="share-build" content="2026-08-28-github-html" />
+<meta name="share-build" content="2026-08-28-github-inline-css" />
 <style>
-  body.share-site .main-content { padding-top: 0 !important; }
+  /* 自包含：方格子等平台不吃外链 styles.css 时仍保暗色 */
+  html, body {
+    background: #0a0e17 !important;
+    color: #e5e7eb !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", sans-serif;
+    line-height: 1.6;
+    margin: 0;
+  }
+  body.share-site .main-content { padding-top: 0 !important; min-height: auto !important; }
+  .page-header {
+    padding: 2.5rem 1.5rem;
+    background: #111827;
+    border-bottom: 1px solid #374151;
+    text-align: center;
+  }
+  .page-title { font-size: 1.75rem; font-weight: 700; color: #f9fafb !important; margin: 0; }
+  .container { max-width: 1100px; margin: 0 auto; padding: 1.5rem; }
+  .theme-pack { font-size: 1.0625rem; line-height: 1.85; color: #e5e7eb !important; }
+  .theme-pack h2 {
+    font-size: 1.25rem; margin: 2em 0 1em; color: #f9fafb !important;
+    border-left: 4px solid #3b82f6; padding-left: 0.65rem;
+  }
+  .theme-pack .report {
+    background: #1a2332; border: 1px solid #374151; border-radius: 0.875rem;
+    padding: 0.5rem 1.25rem 1.75rem;
+  }
+  .theme-pack .rep-h {
+    font-size: 1.12rem; margin: 1.75em 0 0.7em; padding: 1em 0 0;
+    border-top: 1px solid #374151; font-weight: 700; color: #f9fafb !important; line-height: 1.4;
+  }
+  .theme-pack .rep-h:first-of-type { border-top: none; margin-top: 0.85em; padding-top: 0.25em; }
+  .theme-pack .narr,
+  .theme-pack p.narr {
+    margin: 0.2em 0 0.85em !important; font-size: 1.02rem; line-height: 1.82;
+    color: #e5e7eb !important;
+  }
+  .theme-pack .caption { color: #9ca3af !important; font-size: 0.85rem; margin: 0.15em 0 1em; }
+  .theme-pack .report img,
+  .theme-pack img.img-xl {
+    display: block; width: 100%; max-width: 100%; height: auto;
+    border-radius: 0.5rem; border: 1px solid #374151;
+    margin: 1rem 0 0.4rem; cursor: zoom-in; background: #0f1419;
+  }
+  .theme-pack strong { color: #f3f4f6 !important; }
+  .img-lightbox {
+    display: none; position: fixed; inset: 0; z-index: 9999;
+    background: rgba(0,0,0,.88); align-items: center; justify-content: center; padding: 2rem;
+  }
+  .img-lightbox.is-open { display: flex; }
+  .img-lightbox img { max-width: min(96vw, 1200px); max-height: 92vh; object-fit: contain; }
 </style>
 </head>
 <body class="share-site">
